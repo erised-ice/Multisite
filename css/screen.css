@@ -54,14 +54,14 @@
   font-weight: normal;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  font-family: RobotoRegular;
+  font-family: RobotoRegular, Arial, Helvetica, sans-serif;
   color: #2f3c4e;
   background: #f1f1f1;
+}
+
+a {
+  color: #e74c3c;
 }
 
 .inner {
