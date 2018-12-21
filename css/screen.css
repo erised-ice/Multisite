@@ -54,6 +54,21 @@ a {
   color: #2f3c4e;
 }
 
+.main__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 600px;
+  order: 1;
+}
+
+.aside {
+  width: calc(100%-600px);
+  order: 2;
+}
+
 .section {
   position: relative;
   display: flex;
@@ -127,6 +142,8 @@ a {
   color: #fefefe;
   background-color: #e74c3c;
 }
+
+
 
 @media (min-width: 1024px) {
   .header__item:hover {
