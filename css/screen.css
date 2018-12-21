@@ -7,30 +7,6 @@
 }
 
 @font-face {
-  font-family: "RobotoLight";
-  src: url("../fonts/RobotoLight/RobotoLight.eot");
-  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "RobotoMedium";
-  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
-  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "RobotoBold";
-  src: url("../fonts/RobotoBold/RobotoBold.eot");
-  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
   font-family: "RobotoSlabRegular";
   src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot");
   src: url("../fonts/RobotoSlabRegular/RobotoSlabRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.woff") format("woff"), url("../fonts/RobotoSlabRegular/RobotoSlabRegular.ttf") format("truetype");
@@ -38,25 +14,8 @@
   font-weight: normal;
 }
 
-@font-face {
-  font-family: "RobotoSlabLight";
-  src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot");
-  src: url("../fonts/RobotoSlabLight/RobotoSlabLight.eot?#iefix")format("embedded-opentype"), url("../fonts/RobotoSlabLight/RobotoSlabLight.woff") format("woff"), url("../fonts/RobotoSlabLight/RobotoSlabLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "RobotoSlabBold";
-  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot");
-  src: url("../fonts/RobotoSlabBold/RobotoSlabBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoSlabBold/RobotoSlabBold.woff") format("woff"), url("../fonts/RobotoSlabBold/RobotoSlabBold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
 body {
   font-family: RobotoRegular, Arial, Helvetica, sans-serif;
-  color: #2f3c4e;
   background: #f1f1f1;
 }
 
@@ -84,13 +43,73 @@ a {
 .header__item {
   display: inline-block;
   padding: 33px 10px;
-  color: #2f3c4e;
-  font-family: RobotoRegular;
   font-size: 14px;
   font-weight: 600;
+  color: #2f3c4e;
   text-transform: uppercase;
   letter-spacing: 0.28px;
   line-height: 1;
+  text-decoration: none;
+}
+
+.section {
+  padding: 25px 0 20px;
+  width: 600px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.section__title {
+font-family: "RobotoSlabRegular";
+font-size: 24px;
+font-weight: 400;
+letter-spacing: 0.48px;
+margin: 0 60px 23px 21px;
+}
+
+.section__picture {
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.section__img {
+  width: 100%;
+}
+
+.section__paragraph {
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+margin: 0 26px 20px 21px;
+}
+
+.section__paragraph::after {
+width: 560px;
+height: 1px;
+background: #f1f1f1;
+content: '';
+display: block;
+margin-top: 20px;
+}
+
+.section__link {
+  display: block;
+  max-width: 107px;
+  width: 100%;
+  padding: 10px 0 11px;
+  background-color: #e74c3c;
+  color: #fefefe;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 20px;
 }
 
 @media (min-width: 1024px) {
