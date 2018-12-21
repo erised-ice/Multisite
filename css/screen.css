@@ -146,6 +146,7 @@ a {
 .menu {
 width: 270px;
 padding: 20px 20px 16px;
+margin-bottom: 30px;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 background-color: #fff;
 }
