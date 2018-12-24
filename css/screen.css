@@ -147,9 +147,6 @@ a {
     top: 0;
     left: 0;
     width: 100%;
-    /* left: -7.5px;
-    max-width: 615px;
-    width: 102.5%; */ /* Если в точном соответствии с макетом */ 
     height: 100%;
     opacity: 0;
     transition: 0.25s ease-out opacity;
@@ -198,7 +195,7 @@ a {
   .section__link:after {
     bottom: 25px;
     margin-left: -5px;
-    border-top: 5px solid #fff;
+    border-top: 5px solid #dedede;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     content: '';
