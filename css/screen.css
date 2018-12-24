@@ -74,7 +74,7 @@ a {
   position: absolute;
   top: 0;
   right: 0;
-  display: none;
+  opacity: 0;
 }
 
 .section__title {
@@ -134,11 +134,12 @@ a {
 @media (min-width: 1024px) {
   .header__item:hover {
     color: #e74c3c;
-    background: #fff;
+    transition: 0.25s color;    
   }
 
   .section:hover > .triangle {
-    display: block;
+    opacity: 1;
+    transition: 0.25s opacity;
   }
 
   .section__picture:after {
@@ -172,7 +173,7 @@ a {
     margin-bottom: 0px;
     visibility: hidden;
     opacity: 0;
-    transition: 0.7s opacity, 0.7s margin-bottom;
+    transition: 0.25s opacity, 0.25s margin-bottom;
   }  
 
   .section__link:before {
