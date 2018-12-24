@@ -263,4 +263,15 @@ a {
     visibility: visible;
     opacity: 1;
   }
+
+  .aside-menu:hover .aside-menu__link {
+    opacity: 0.4;
+    transition: opacity 0.25s;
+  }
+
+  .aside-menu .aside-menu__link:hover {
+    margin-left: 12px;
+    opacity: 1;
+    transition: 0.25s opacity, 0.25s margin-left;
+  }
 }
