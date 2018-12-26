@@ -158,7 +158,6 @@ a {
 
 .aside-menu__item {
   border-bottom: 1px solid #f1f1f1;
-  padding: 7px 0 5px 1px;
 }
 
 .aside-menu--red .aside-menu__item {
@@ -172,6 +171,8 @@ a {
 }
 
 .aside-menu__link {
+  display: block;
+  padding: 7px 0 5px 1px;
   color: #2f3c4e;
   text-decoration: none;
   font-family: RobotoRegular, Arial, Helvetica, sans-serif;
@@ -263,15 +264,15 @@ a {
     visibility: visible;
     opacity: 1;
   }
-
+  
   .aside-menu:hover .aside-menu__link {
     opacity: 0.4;
     transition: opacity 0.25s;
   }
 
   .aside-menu .aside-menu__link:hover {
-    margin-left: 12px;
+    padding-left: 13px;
     opacity: 1;
-    transition: 0.25s opacity, 0.25s margin-left;
+    transition: 0.25s opacity, 0.25s padding-left;
   }
 }
