@@ -185,25 +185,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  display: flex;
   min-height: 100vh;
 }
 
 body {
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
   width: 100%;
 }
 

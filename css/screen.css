@@ -182,7 +182,23 @@ a {
 .section__link:after {
   bottom: 25px;
   margin-left: -5px;
-  border-top: 5px solid #dedede;
+  border-top: 5px solid #fff;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  content: '';
+}
+
+.section__tooltip:after {
+  position: absolute;
+  left: 50%; 
+  bottom: 23px;
+  display: block;
+  margin-bottom: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.25s opacity, 0.25s margin-bottom;
+  margin-left: -6px;
+  border-top: 6px solid #dedede;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   content: '';
@@ -204,7 +220,8 @@ a {
   }
  
   .section__link:hover:before,
-  .section__link:hover:after {
+  .section__link:hover:after,
+  .section__link:hover .section__tooltip:after {
     margin-bottom: 7px;
     visibility: visible;
     opacity: 1;
