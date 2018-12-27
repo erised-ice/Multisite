@@ -43,12 +43,12 @@ a {
 .header__items {
   display: flex;
   justify-content: flex-end;
-  padding-right: 10px;
+  padding-right: 5px;
 }
 
 .header__item {
   display: inline-block;
-  padding: 33px 10px;
+  padding: 33px 15px;
   font-size: 14px;
   font-weight: 600;
   line-height: 1;
@@ -81,6 +81,10 @@ a {
   margin-bottom: 30px;
   background-color: #ffffff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.section:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 .section__svg {
@@ -222,14 +226,16 @@ a {
   background-color: #fff;
 }
 
+.aside-menu:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .aside-menu__link {
   display: block;
   padding-top: 7px;
   padding-right: 20px;
   padding-bottom: 5px;
   padding-left: 21px; 
-  
-  /* padding: 7px 0 5px 1px; */
   color: #2f3c4e;
   text-decoration: none;
   font-family: RobotoRegular, Arial, Helvetica, sans-serif;
