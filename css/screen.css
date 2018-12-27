@@ -232,19 +232,28 @@ a {
   letter-spacing: 0.28px;
 }
 
-.aside-menu__text {
-  display: block;
-  margin: 0 20px 0;
-  border-bottom: 1px solid #f1f1f1;
-}
-
 .aside-menu--red {
   background-color: #e74c3c;
 }
 
-.aside-menu--red .aside-menu__text {
-  border-bottom: 1px solid ;
-  border-color: rgb(241, 241, 241, 0.5);
+.aside-menu__item {
+  position: relative;
+}
+
+.aside-menu__item:before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: calc(100% - 40px);
+  height: 1px;
+  display: block;
+  background: #f1f1f1;
+  content: '';
+  transform: translate(-50%, 0);
+}
+
+.aside-menu--red .aside-menu__item:before {
+  background: rgb(241, 241, 241, 0.5);
 }
 
 .aside-menu__item:first-child .aside-menu__link {
