@@ -1,10 +1,42 @@
 @media(max-width: 767px) {
+  .header {
+    margin-bottom: 5px;
+  }
+  
+  .header__inner {
+    padding: 0 20px;
+  }
 
-@media(max-width: 520px) {
-  .header__label {
+  .content {
+    order: 2;
+  }
+
+  .aside {
+    order: 1;
+    flex-basis: 100%;
+    margin: 0 0 5px;
+  }
+
+  .aside-menu {
+    margin-bottom: 5px;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .js-open-menu {
     display: block;
   }
 
+  .menu--show {
+    max-height: 500px;
+  }
+}
+
+@media(max-width: 520px) {
+
+  .header__label {
+    display: block;
+  }
   
   .header__items {
     display: block;
